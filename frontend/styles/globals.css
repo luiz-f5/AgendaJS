@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --success-color: #22c55e;     
+  --success-color-light: #86efac; 
+
+  --warn-color: #eec213;        
+  --warn-color-light: #fde68a; 
+
+  --error-color: #ef4444;   
+  --error-color-light: #fca5a5;
+
+  --color-danger: #dc2626;   
+
+  --text-color-1: white;
+  --text-color-2: black;
+
+  --backdrop: rgba(0, 0, 0, 0.13);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.page {
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.table thead tr {
+  background-color: #ddd;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+  margin-right: 8px;
+}
+
+.btn.success {
+  background-color: var(--success-color);
+  color: white;
+}
+.btn.success:hover {
+  background-color: var(--success-color-light);
+}
+
+.btn.danger {
+  background-color: var(--color-danger);
+  color: white;
+}
+.btn.danger:hover {
+  background-color: var(--error-color);
+}
+
+.btn.warn {
+  background-color: var(--warn-color);
+  color: black;
+}
+.btn.warn:hover {
+  background-color: var(--warn-color-light);
+}
+
+input,
+select,
+textarea {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.bg-opacity-40 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.confirm-dialog {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  width: 380px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInOut {
+  0%   { opacity: 0; transform: translateY(-10px); }
+  10%  { opacity: 1; transform: translateY(0); }
+  90%  { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.animate-fadeInOut {
+  animation: fadeInOut 2s ease-in-out both;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+  margin-right: 8px;
+}
+ul li {
+    padding-top:10px;
+    margin-bottom: 10px;
+  }
+  
+  .google-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4285F4;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .google-btn:hover {
+    background-color: #3367d6;
+  }
