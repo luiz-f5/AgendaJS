@@ -52,6 +52,7 @@ export default function Dashboard() {
           <li><Link className="btn success" href="/admin/users">Usuários</Link></li>
           <li><Link className="btn success" href="/admin/notifications">Notificações</Link></li>
           <li><Link className="btn success" href="/admin/specialties">Especialidades</Link></li>
+          <li><Link className="btn success" href="/admin/files">Laudos</Link></li>
         </ul>
       )}
 
